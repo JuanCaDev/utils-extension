@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversión</title>
+  <style>
+    * {
+      font-family: sans-serif, serif;
+    }
+
+    body {
+      width: 400px;
+      padding: 1.25rem;
+    }
+
+    h1, p {
+      margin: 0;
+    }
+
+    hr {
+      margin: 1rem 0;
+    }
+
+    .title {
+      margin-bottom: 0.5rem;
+    }
+
+    .txt {
+      font-size: 1.125rem;
+      color: rgb(30, 30, 30);
+    }
+
+    .input {
+      padding: 0.5rem 0.75rem;
+      border: none;
+      border: 1px solid gray;
+      border-radius: 6px;
+      margin: 0.5rem 0;
+    }
+
+    .btn {
+      padding: 0.5rem 0.75rem;
+      background-color: teal;
+      color: white;
+      border-radius: 6px;
+      border: none;
+      border: 1px solid teal;
+    }
+
+    .txt-result {
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Convertir de USD a COP</h1>
+  <p class="txt">Valor del dolar hoy: <span id="txtUSDToday">Cargando...</span></p>
+  <form>
+    <input type="number" id="inputUSD" class="input" placeholder="Ingresa valor en dolares" />
+    <button type="submit" id="btnConvert" class="btn">Convertir</button>
+  </form>
+  <p class="txt">Resultado: <span id="txtResult" class="txt-result">Aún no hay</span></p>
+
+  <hr />
+
+  <h1 class="title">Convertir de pulgadas a centímetros</h1>
+  <p class="txt">1 pulgada equivale a 2.54 cm</span></p>
+  <form>
+    <input type="number" id="inputIn" class="input" placeholder="Ingresa valor en pulgadas" />
+    <button type="submit" id="btnConvertIn" class="btn">Convertir</button>
+  </form>
+  <p class="txt">Resultado: <span id="txtResultIn" class="txt-result">Aún no hay</span></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
